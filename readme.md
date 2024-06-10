@@ -16,3 +16,5 @@ For Backend:
 -> Mongoose for managing our MongoDB
 -> jsonwebtoken(JWT) for authentication
 -> Multer for file uploading
+
+Currently working on building backend server.
