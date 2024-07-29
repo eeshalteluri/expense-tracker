@@ -10,7 +10,7 @@ const server = express();
 
 // CONFIGURE HEADER INFORMATION
 // Allow request from any source. In real production, this should be limited to allowed origins only
-server.use(cors({credentials:true}));
+server.use(cors({origin: 'http://localhost:5173', credentials:true}));
 server.disable("x-powered-by"); //Reduce fingerprinting
 server.use(cookieParser());
 server.use(express.urlencoded({ extended: false }));

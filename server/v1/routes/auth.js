@@ -26,7 +26,7 @@ router.post(
         .escape(),
     check("userName")
         .notEmpty()
-        .isLength({ min: 6 })
+        .isLength({ min: 3 })
         .withMessage("Must be at least 6 chars long"),
     check("password")
         .notEmpty()

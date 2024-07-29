@@ -62,7 +62,7 @@ const Signup = () => {
          {errors.email && <p className='text-red-500 mt-2'>{errors.email.message}</p>}
         <div className='overflow-y-hidden bg-white'>
         <select {...register("currency")} name="currency" value={userDetails.currency} onFocus={(e) => { e.target.size = 5}}
-    onBlur={(e) => { e.target.size = 1; }} onChange={handleUserDetails} className='w-full'>
+    onBlur={(e) => { e.target.size = 1; }} className='w-full'>
       <option selected value="USD" label="US dollar">USD</option>
       <option value="CNY" label="Chinese yuan">CNY</option>
       <option value="EUR" label="Euro">EUR</option>
