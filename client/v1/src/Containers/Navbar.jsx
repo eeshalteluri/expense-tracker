@@ -28,7 +28,7 @@ const logOut = async () => {
   console.log('Current cookies: ', document.cookie)
   const token = getCookie('SessionID')
   console.log('logout token: ', token)
-  await axios.get(`${BACKEND_URL}/v1/auth/logout`, {
+  await axios.get(`${BACKEND_URL}/api/v1/auth/logout`, {
     headers: {
       Authorization: `Bearer ${token}`
     }

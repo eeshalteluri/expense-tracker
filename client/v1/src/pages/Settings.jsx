@@ -29,7 +29,7 @@ const Settings = () => {
 
     try {
       console.log('Submitting UserDetails:', userDetails);
-      await axios.put(`${BACKEND_URL}/v1/auth/home/settings`, userDetails, {
+      await axios.put(`${BACKEND_URL}/api/v1/auth/home/settings`, userDetails, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -53,7 +53,7 @@ const Settings = () => {
     try {
       console.log("Fetching data...");
       const token = await getCookie('SessionID');
-      const response = await axios.get(`${BACKEND_URL}/v1/auth/home/settings`, {
+      const response = await axios.get(`${BACKEND_URL}/api/v1/auth/home/settings`, {
         headers: {
           Authorization: `Bearer ${token}`
         }

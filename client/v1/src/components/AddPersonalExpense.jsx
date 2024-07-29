@@ -35,7 +35,7 @@ const onSubmit = async (data) =>{
   try {
           const token = await getCookie('SessionID');
           console.log('token:', token)
-          const response = await axios.post(`${BACKEND_URL}/v1/auth/home`, newExpenseDetails, {
+          const response = await axios.post(`${BACKEND_URL}/api/v1/auth/home`, newExpenseDetails, {
             headers: {
               Authorization: `Bearer ${token}`
             }

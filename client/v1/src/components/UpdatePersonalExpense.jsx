@@ -34,7 +34,7 @@ const UpdatePersonalExpense = ({ id, fetchData, fetchExpense, closeModal }) => {
       const token = await getCookie('SessionID');
       console.log('updatetoken: ',token)
       console.log('newExpenseDetails: ', newExpenseDetails)
-      await axios.put(`${BACKEND_URL}/v1/auth/home`, newExpenseDetails, {
+      await axios.put(`${BACKEND_URL}/api/v1/auth/home`, newExpenseDetails, {
         headers: {
           Authorization: `Bearer ${token}`
         },

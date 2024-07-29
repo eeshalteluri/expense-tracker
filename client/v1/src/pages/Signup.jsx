@@ -38,7 +38,7 @@ const Signup = () => {
   const onSubmit = async (data) => {
     try{
       console.log(userDetails)
-      await axios.post(`${BACKEND_URL}/v1/auth/signup`, userDetails)
+      await axios.post(`${BACKEND_URL}/api/v1/auth/signup`, userDetails)
       navigate("/v1/login")
     }
     catch(error){

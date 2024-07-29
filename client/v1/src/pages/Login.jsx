@@ -33,7 +33,7 @@ const Login = () => {
   const submitHandler = async () => {
     try{
       console.log("submit handler1")
-    await axios.post(`${BACKEND_URL}/v1/auth/signin`,loginData, {withCredentials: true})
+    await axios.post(`${BACKEND_URL}/api/v1/auth/signin`,loginData, {withCredentials: true})
     console.log("submit handler2")
     navigate("/v1/auth/dashboard")
   }catch(error){

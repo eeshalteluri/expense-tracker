@@ -35,7 +35,7 @@ const PersonalExpenseCard = ({id, currency, expName, expAmount, expDate, expDesc
     const deleteExpense = async () => {
       const token = await getCookie('SessionID');
       console.log("CardToken: ", token)
-      const response = await axios.delete(`${BACKEND_URL}/v1/auth/home`, {
+      const response = await axios.delete(`${BACKEND_URL}/api/v1/auth/home`, {
         headers: {
           Authorization: `Bearer ${token}`
         },

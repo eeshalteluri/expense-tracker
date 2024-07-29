@@ -63,7 +63,7 @@ const Home = () => {
 
      console.log("fetching data...")
      const token = await getCookie('SessionID');
-     const response = await axios.get(`${BACKEND_URL}/v1/auth/home`,{
+     const response = await axios.get(`${BACKEND_URL}/api/v1/auth/home`,{
        headers: {
          Authorization: `Bearer ${token}`
        }
