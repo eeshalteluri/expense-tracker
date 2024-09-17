@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { expenseSchema } from '../../../../common/src/index.js'
+import { expenseSchema } from '../common/src/index.js'
 import { BACKEND_URL } from '../config.js'
 import axios from 'axios'
 import { AiOutlineClose } from "react-icons/ai";

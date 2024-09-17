@@ -6,7 +6,7 @@ import Navbar from '../Containers/Navbar';
 import { BACKEND_URL } from '../config';
 import getCookie from '../../../../server/v1/middlewares/getCookie';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { signupSchema } from '../../../../common/src/index.js';
+import { signupSchema } from '../common/src/index.js';
 import { FaRegEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
 
